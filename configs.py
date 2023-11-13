@@ -1,4 +1,5 @@
 windowSize = "800x400"
-bg = "#d1f2a2"
-font40 = 'arial',40,'bold'
-font = 'arial',28,'bold'
+bg = "#3fe852"
+font40 = 'Times New Roman',40,'bold'
+font = 'Times New Roman',28,'bold'
+icon = "img/icon.ico"
