@@ -1,6 +1,7 @@
 from tkinter import *
 import randGuessFunc
 import configs
+import clear
 
 
 
@@ -35,7 +36,14 @@ if __name__ == '__main__':
                            font=(configs.font),
                            command= lambda: randGuessFunc.guess(entry,labelAnswer),
                            bd=10)
-    submit_button.pack()
+    submit_button.pack(padx=20,pady=20)
+
+    clear_button = Button(window,
+                           text="очистить",
+                           font=(configs.font),
+                           command=lambda: clear.clear(entry),
+                           bd=10)
+    clear_button.pack()
 
     #леймб для ответа угадал или нет
     labelAnswer = Label(window,
