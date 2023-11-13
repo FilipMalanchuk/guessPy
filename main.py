@@ -21,9 +21,12 @@ if __name__ == '__main__':
     labelAsk.pack()
 
    
+    # input
+    entry = Entry(window,
+                  font=(configs.font),
+                  bd=10,
+                  foreground="#40167a")
 
-    entry = Entry(window, # инпут
-                  font=(configs.font),bd=10,foreground="#40167a")
     entry.insert(0,"0")
     entry.pack(padx=20,pady=20)
 
@@ -34,12 +37,17 @@ if __name__ == '__main__':
                            bd=10)
     submit_button.pack()
 
-    labelAnswer = Label(window,text="",font=(configs.font),bg=configs.bg,bd=10)
+    #леймб для ответа угадал или нет
+    labelAnswer = Label(window,
+                        text="",
+                        font=(configs.font),
+                        bg=configs.bg,
+                        bd=10)
     labelAnswer.pack()
 
     #keybinds
-    if __name__ == '__main__':
-        window.bind("<Return>", enterPress)
+    window.bind("<Return>", enterPress)
+
 
     window.mainloop()
 
