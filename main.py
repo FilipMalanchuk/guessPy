@@ -11,7 +11,8 @@ if __name__ == '__main__':
     window = Tk()
     window.geometry(configs.windowSize)
 
-    window.iconbitmap(configs.icon)
+    topIcon = PhotoImage(file=configs.iconPng)
+    window.iconphoto(True,topIcon)
     window.title("угадай число")
     window.config(background=configs.bg)
 
